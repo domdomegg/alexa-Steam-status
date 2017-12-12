@@ -1,0 +1,9 @@
+{
+  "name": "SteamStatus",
+  "private": true,
+  "dependencies": {
+    "i18n": "latest",
+    "alexa-sdk": "latest",
+    "https": "latest"
+  }
+}

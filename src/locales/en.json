@@ -1,0 +1,16 @@
+{
+   "Sorry, I couldn't get Steam's status.":
+   "Sorry, I couldn't get Steam's status.",
+
+   "The Steam client, community, store and user API are all online.":
+   "The Steam client, community, store and user API are all online.",
+
+   "The Steam client is %s, the community is %s, the store is %s and the user API is %s.":
+   "The Steam client is %s, the community is %s, the store is %s and the user API is %s.",
+
+   "online": "online",
+   "down": "down",
+
+   "HELP_TEXT": "Steam status can check whether Steam is actually down or it's just you.",
+   "STOP_TEXT": "Bye!"
+}
