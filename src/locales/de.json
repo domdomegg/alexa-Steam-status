@@ -1,6 +1,6 @@
 {
    "Sorry, I couldn't get Steam's status.":
-   "Entschuldigung, ich konnte Steams Status nicht bekommen.",
+   "Entschuldigung, habe ich Steams status nicht gefunden.",
 
    "The Steam client, community, store and user API are all online.":
    "Der Steam-Client, die Community, der Store und die Benutzer-API sind alle online",
@@ -12,5 +12,5 @@
    "down": "offline",
 
    "HELP_TEXT": "Wenn Steam nicht funktioniert, kann ich überprüfen, ob das Problem durch eine Störung hervorgerufen wird oder nur ihr Schwierigkeiten bei der Nutzung habt.",
-   "STOP_TEXT": "Auf Wiedersehen!"
+   "STOP_TEXT": "Tschüss!"
 }
