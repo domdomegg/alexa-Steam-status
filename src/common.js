@@ -8,7 +8,7 @@ const sgapi_url = 'https://steamgaug.es/api/v2'
 
 // Configure internationalization settings
 i18n.configure({
-  locales: ['en'],
+  locales: ['en', 'de'],
   directory: __dirname + '/locales',
   defaultLocale: 'en'
 });
