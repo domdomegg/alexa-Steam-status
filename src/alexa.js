@@ -6,7 +6,7 @@ const common = require('./common.js');
 const handlers = {
     'SteamStatus': function () {
         // Get steam status - looks different from others as relies on a callback
-        common.getSteamStatus(this.event.request.locale, (response) => {
+        common.getSteamStatus(this.event.request.locale.substring(0,2), (response) => {
             this.emit(':tell', response);
         });
     },
@@ -21,7 +21,7 @@ const handlers = {
 
     'AMAZON.StopIntent': function () {
         // Get stop text from common.js
-        this.emit(':tell', common.stop(this.event.request.locale));
+        this.emit(':tell', common.stop(this.event.request.locale.substring(0,2)));
     },
     'SessionEndedRequest': function () {
         // Should do the same thing as stop
@@ -34,7 +34,7 @@ const handlers = {
 
     'AMAZON.HelpIntent': function () {
         // Get help text from common.js
-        this.emit(':tell', common.help(this.event.request.locale));
+        this.emit(':tell', common.help(this.event.request.locale.substring(0,2)));
     },
 };
 
