@@ -11,6 +11,6 @@
    "online": "online",
    "down": "down",
 
-   "HELP_TEXT": "Steam status can check whether Steam is actually down or it's just you.",
+   "HELP_TEXT": "Steam status can check whether Steam is actually down or it's just you. Would you like to know the status now?",
    "STOP_TEXT": "Bye!"
 }

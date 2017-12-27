@@ -18,6 +18,10 @@ const handlers = {
         // Given the app doesn't do anything else, redirect any unhandled intents to just give the status
         this.emit('SteamStatus');
     },
+    'AMAZON.YesIntent': function () {
+        // Probably handling from help
+        this.emit('SteamStatus');
+    },
 
     'AMAZON.StopIntent': function () {
         // Get stop text from common.js
@@ -31,10 +35,14 @@ const handlers = {
         // Cancel should do the same thing as stop
         this.emit('AMAZON.StopIntent');
     },
+    'AMAZON.NoIntent': function () {
+        // Should do the same thing as stop
+        this.emit('AMAZON.StopIntent');
+    },
 
     'AMAZON.HelpIntent': function () {
         // Get help text from common.js
-        this.emit(':tell', common.help(this.event.request.locale.substring(0,2)));
+        this.emit(':ask', common.help(this.event.request.locale.substring(0,2)));
     },
 };
 

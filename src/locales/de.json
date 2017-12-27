@@ -11,6 +11,6 @@
    "online": "online",
    "down": "offline",
 
-   "HELP_TEXT": "Wenn Steam nicht funktioniert, kann ich überprüfen, ob das Problem durch eine Störung hervorgerufen wird oder nur ihr Schwierigkeiten bei der Nutzung habt.",
+   "HELP_TEXT": "Wenn Steam nicht funktioniert, kann ich überprüfen, ob das Problem durch eine Störung hervorgerufen wird oder nur ihr Schwierigkeiten bei der Nutzung habt. Möchtest du das jetzt überprüfen?",
    "STOP_TEXT": "Tschüss!"
 }
