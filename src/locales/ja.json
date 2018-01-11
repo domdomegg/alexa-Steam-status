@@ -3,14 +3,62 @@
    "すみません、私はSteamのステータスを取得することはできません",
 
    "The Steam client, community, store and user API are all online.":
-   "Steam クライアント、コミュニティ、ストア、ユーザーAPIはオンラインです",
+   "Steamクライアント、コミュニティ、ストア、ユーザーAPIはオンラインです",
 
    "The Steam client is %s, the community is %s, the store is %s and the user API is %s.":
    "Steamクライアントはオ%sライン、コミュニティはオ%sライン、ストアはオ%sライン、ユーザーAPIはオ%sラインです",
 
+   "STEAM_HELP_TEXT": "Steamが利用可能かどうかを確認する。今すぐチェックしますか？",
+
+
+
+   "Sorry, I couldn't get TF2's status.":
+   "すみません、私は<say-as interpret-as=\"spell-out\">TF</say-as>2のステータスを取得することはできません",
+
+   "The TF2 game coordinator and items API are both online.":
+   "<say-as interpret-as=\"spell-out\">TF</say-as>2ゲームコーディネーターとアイテムAPIはどちらもオンラインです。",
+
+   "The TF2 game coordinator is %s and the items API is %s.":
+   "<say-as interpret-as=\"spell-out\">TF</say-as>2ゲームコーディネーターはオ%sラインで、アイテムAPIはオ%sラインです。",
+
+   "TF2_HELP_TEXT": "<say-as interpret-as=\"spell-out\">TF</say-as>2が利用可能かどうかを確認する。今すぐチェックしますか？",
+
+
+
+   "Sorry, I couldn't get Dota's status.":
+   "すみません、私はDotaのステータスを取得することはできません",
+
+   "The Dota game coordinator and items API are both online.":
+   "DotaゲームコーディネーターとアイテムAPIはどちらもオンラインです。",
+
+   "The Dota game coordinator is %s and the items API is %s.":
+   "Dotaゲームコーディネーターはオ%sラインで、アイテムAPIはオ%sラインです。",
+
+   "There are currently %s players searching.":
+   "現在%s人のプレイヤーが検索しています。",
+
+   "DOTA_HELP_TEXT": "Dotaが利用可能かどうかを確認する。今すぐチェックしますか？",
+
+
+
+   "Sorry, I couldn't get CSGO's status.":
+   "すみません、私はCS GOのステータスを取得することはできません",
+
+   "The CSGO game coordinator and items API are both online.":
+   "CS GOゲームコーディネーターとアイテムAPIはどちらもオンラインです。",
+
+   "The CSGO game coordinator is %s and the items API is %s.":
+   "CS GOゲームコーディネーターはオ%sラインで、アイテムAPIはオ%sラインです。",
+
+   "Currently %s of the %s online players are searching, with an average wait time of %s seconds.":
+   "現在、%s人のプレイヤーが検索しており、%s人がオンラインで、平均待機時間は%s秒です。",
+
+   "CSGO_HELP_TEXT": "CS GOが利用可能かどうかを確認する。今すぐチェックしますか？",
+
+
+
    "online": "ン",
    "down": "フ",
 
-   "HELP_TEXT": "Steamが利用可能かどうかを確認する。今すぐチェックしますか？",
    "STOP_TEXT": "さようなら、またね。"
 }

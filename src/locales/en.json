@@ -8,9 +8,57 @@
    "The Steam client is %s, the community is %s, the store is %s and the user API is %s.":
    "The Steam client is %s, the community is %s, the store is %s and the user API is %s.",
 
+   "STEAM_HELP_TEXT": "Steam status can check whether Steam is actually down or it's just you. Would you like to check the status now?",
+
+
+
+   "Sorry, I couldn't get TF2's status.":
+   "Sorry, I couldn't get <say-as interpret-as=\"spell-out\">TF</say-as>2's status.",
+
+   "The TF2 game coordinator and items API are both online.":
+   "The <say-as interpret-as=\"spell-out\">TF</say-as>2 game coordinator and items API are both online.",
+
+   "The TF2 game coordinator is %s and the items API is %s.":
+   "The <say-as interpret-as=\"spell-out\">TF</say-as>2 game coordinator is %s and the items API is %s.",
+
+   "TF2_HELP_TEXT": "<say-as interpret-as=\"spell-out\">TF</say-as>2 status can check whether <say-as interpret-as=\"spell-out\">TF</say-as>2 is actually down or it's just you. Would you like to check the status now?",
+
+
+
+   "Sorry, I couldn't get Dota's status.":
+   "Sorry, I couldn't get Dota's status.",
+
+   "The Dota game coordinator and items API are both online.":
+   "The Dota game coordinator and items API are both online.",
+
+   "The Dota game coordinator is %s and the items API is %s.":
+   "The Dota game coordinator is %s and the items API is %s.",
+
+   "There are currently %s players searching.":
+   "There are currently %s players searching.",
+
+   "DOTA_HELP_TEXT": "Dota status can check whether Dota 2 is actually down or it's just you. Would you like to check the status now?",
+
+
+
+   "Sorry, I couldn't get CSGO's status.":
+   "Sorry, I couldn't get CS GO's status.",
+
+   "The CSGO game coordinator and items API are both online.":
+   "The CS GO game coordinator and items API are both online.",
+
+   "The CSGO game coordinator is %s and the items API is %s.":
+   "The CS GO game coordinator is %s and the items API is %s.",
+
+   "Currently %s of the %s online players are searching, with an average wait time of %s seconds.":
+   "Currently %s of the %s online players are searching, with an average wait time of %s seconds.",
+
+   "CSGO_HELP_TEXT": "CS GO status can check whether CS GO is actually down or it's just you. Would you like to check the status now?",
+
+
+
    "online": "online",
    "down": "down",
 
-   "HELP_TEXT": "Steam status can check whether Steam is actually down or it's just you. Would you like to know the status now?",
    "STOP_TEXT": "Bye!"
 }

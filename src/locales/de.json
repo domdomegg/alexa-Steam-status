@@ -8,9 +8,57 @@
    "The Steam client is %s, the community is %s, the store is %s and the user API is %s.":
    "Der Steam-Client ist %s, die Community ist %s, der Store ist %s und die Benutzer API ist %s.",
 
+   "STEAM_HELP_TEXT": "Wenn Steam nicht funktioniert, kann ich überprüfen, ob das Problem durch eine Störung hervorgerufen wird oder nur ihr Schwierigkeiten bei der Nutzung habt. Möchtest du das jetzt überprüfen?",
+
+
+
+   "Sorry, I couldn't get TF2's status.":
+   "Entschuldigung, habe ich <say-as interpret-as=\"spell-out\">TF</say-as>2's status nicht gefunden.",
+
+   "The TF2 game coordinator and items API are both online.":
+   "Der <say-as interpret-as=\"spell-out\">TF</say-as>2-Spielkoordinator und die Artikel-<say-as interpret-as=\"spell-out\">API</say-as> sind beide online.",
+
+   "The TF2 game coordinator is %s and the items API is %s.":
+   "Der <say-as interpret-as=\"spell-out\">TF</say-as>2-Spielkoordinator ist %s und die Artikel-<say-as interpret-as=\"spell-out\">API</say-as> ist %s.",
+
+   "TF2_HELP_TEXT": "Wenn <say-as interpret-as=\"spell-out\">TF</say-as>2 nicht funktioniert, kann ich überprüfen, ob das Problem durch eine Störung hervorgerufen wird oder nur ihr Schwierigkeiten bei der Nutzung habt. Möchtest du das jetzt überprüfen?",
+
+
+
+   "Sorry, I couldn't get Dota's status.":
+   "Entschuldigung, habe ich Dota's status nicht gefunden.",
+
+   "The Dota game coordinator and items API are both online.":
+   "Der Dota-Spielkoordinator und die Artikel-<say-as interpret-as=\"spell-out\">API</say-as> sind beide online.",
+
+   "The Dota game coordinator is %s and the items API is %s.":
+   "Der Dota-Spielkoordinator ist %s und die Artikel-<say-as interpret-as=\"spell-out\">API</say-as> ist %s.",
+
+   "There are currently %s players searching.":
+   "Derzeit suchen %s Spieler.",
+
+   "DOTA_HELP_TEXT": "Wenn Dota nicht funktioniert, kann ich überprüfen, ob das Problem durch eine Störung hervorgerufen wird oder nur ihr Schwierigkeiten bei der Nutzung habt. Möchtest du das jetzt überprüfen?",
+
+
+
+   "Sorry, I couldn't get CSGO's status.":
+   "Entschuldigung, habe ich CS GO's status nicht gefunden.",
+
+   "The CSGO game coordinator and items API are both online.":
+   "Der CS GO Spielkoordinator und die Artikel-<say-as interpret-as=\"spell-out\">API</say-as> sind beide online.",
+
+   "The CSGO game coordinator is %s and the items API is %s.":
+   "Der CS GO Spielkoordinator ist %s und die Artikel-<say-as interpret-as=\"spell-out\">API</say-as> ist %s.",
+
+   "Currently %s of the %s online players are searching, with an average wait time of %s seconds.":
+   "Derzeit suchen %s der %s Online-Spieler mit einer durchschnittlichen Wartezeit von %s Sekunden.",
+
+   "CSGO_HELP_TEXT": "Wenn CS GO nicht funktioniert, kann ich überprüfen, ob das Problem durch eine Störung hervorgerufen wird oder nur ihr Schwierigkeiten bei der Nutzung habt. Möchtest du das jetzt überprüfen?",
+
+
+
    "online": "online",
    "down": "offline",
 
-   "HELP_TEXT": "Wenn Steam nicht funktioniert, kann ich überprüfen, ob das Problem durch eine Störung hervorgerufen wird oder nur ihr Schwierigkeiten bei der Nutzung habt. Möchtest du das jetzt überprüfen?",
    "STOP_TEXT": "Tschüss!"
 }
