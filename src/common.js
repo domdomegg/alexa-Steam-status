@@ -70,9 +70,112 @@ module.exports = {
             }
         });
     },
-    help: function (locale) {
+    getTF2Status: function (locale, callback) {
         i18n.setLocale(locale);
-        return i18n.__('HELP_TEXT');
+
+        getData(sgapi_url, (data) => {
+            if(data == null) {
+                // In case https request failed
+                callback(i18n.__('Sorry, I couldn\'t get TF2\'s status.'));
+            }
+
+            if(data.IEconItems['440'].online == 1
+              && data.ISteamGameCoordinator['440'].online == 1) {
+                // In the case everything is working
+                callback(i18n.__('The TF2 game coordinator and items API are both online.'));
+            } else {
+                // Get textual service status
+                let gc_status   = getServiceStatus(data.ISteamGameCoordinator['440']);
+                let items_status= getServiceStatus(data.IEconItems['440']);
+
+                callback(i18n.__(
+                    'The TF2 game coordinator is %s and the items API is %s.', 
+                    gc_status, items_status
+                ));
+            }
+        });
+    },
+    getDotaStatus: function (locale, callback) {
+        i18n.setLocale(locale);
+
+        getData(sgapi_url, (data) => {
+            if(data == null) {
+                // In case https request failed
+                callback(i18n.__('Sorry, I couldn\'t get Dota\'s status.'));
+            }
+
+            // Build callback speech
+            let callback_speech = '';
+
+            if(data.IEconItems['570'].online == 1
+              && data.ISteamGameCoordinator['570'].online == 1) {
+                // In the case everything is working
+                callback_speech += (i18n.__('The Dota game coordinator and items API are both online.'));
+            } else {
+                // Get textual service status
+                let gc_status   = getServiceStatus(data.ISteamGameCoordinator['570']);
+                let items_status= getServiceStatus(data.IEconItems['570']);
+
+                callback_speech += (i18n.__(
+                    'The Dota game coordinator is %s and the items API is %s.', 
+                    gc_status, items_status
+                ));
+            }
+
+            if(data.ISteamGameCoordinator['570'].stats
+                && data.ISteamGameCoordinator['570'].stats.players_searching) {
+                callback_speech += ' ';
+                callback_speech += (i18n.__('There are currently %s players searching.',
+                    data.ISteamGameCoordinator['570'].stats.players_searching))
+            }
+
+            callback(callback_speech);
+        });
+    },
+    getCSGOStatus: function (locale, callback) {
+        i18n.setLocale(locale);
+
+        getData(sgapi_url, (data) => {
+            if(data == null) {
+                // In case https request failed
+                callback(i18n.__('Sorry, I couldn\'t get CSGO\'s status.'));
+            }
+
+            // Build callback speech
+            let callback_speech = '';
+
+            if(data.IEconItems['730'].online == 1
+              && data.ISteamGameCoordinator['730'].online == 1) {
+                // In the case everything is working
+                callback_speech += (i18n.__('The CSGO game coordinator and items API are both online.'));
+            } else {
+                // Get textual service status
+                let gc_status   = getServiceStatus(data.ISteamGameCoordinator['730']);
+                let items_status= getServiceStatus(data.IEconItems['730']);
+
+                callback_speech += (i18n.__(
+                    'The CSGO game coordinator is %s and the items API is %s.', 
+                    gc_status, items_status
+                ));
+            }
+
+            if(data.ISteamGameCoordinator['730'].stats
+                && data.ISteamGameCoordinator['730'].stats.players_searching) {
+                callback_speech += ' ';
+                callback_speech += (i18n.__('Currently %s of the %s online players are searching, with an average wait time of %s seconds.',
+                    data.ISteamGameCoordinator['730'].stats.players_searching,
+                    data.ISteamGameCoordinator['730'].stats.players_online,
+                    Math.round(data.ISteamGameCoordinator['730'].stats.average_wait / 1000)
+                    ))
+            }
+
+            callback(callback_speech);
+        });
+    },
+    // game should be one of ['STEAM', 'TF2', 'DOTA', 'CSGO']
+    help: function (locale, game) {
+        i18n.setLocale(locale);
+        return i18n.__(game + '_HELP_TEXT');
     },
     stop: function (locale) {
         i18n.setLocale(locale);
